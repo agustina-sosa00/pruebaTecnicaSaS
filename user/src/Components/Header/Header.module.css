@@ -1,31 +1,72 @@
-.divHeader{
+.headerDiv{
     width: 100%;
     height: 130px;
-    background-color: aqua;
+    background-color: #031e29; 
     margin: 0 auto;
     display: flex;
-    justify-content: space-evenly;
+    justify-content: center;
     align-items: center;
+    position: sticky;
+    top: 0;
+    z-index: 2;
 }
+/* letra negra//242424 */
+
+.subDiv{
+    width: 50%;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    margin: 10px auto;
+}
+
+.subDiv2{
+    width: 35%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 10px auto;
+}
+
 
 .imgHeader{
     width: 100px;
     height: 100px;
     border-radius: 150px;
     box-shadow: 0px 10px 10px rgb(78, 76, 76);
+    margin-right: 20px;
 }
 
 .nameHeader{
     text-align: center;
     font-size: 40px;
-    font-family:Verdana, Geneva, Tahoma, sans-serif
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    color: aliceblue;
+    animation: cambioColor 3s infinite;
+}
+
+@keyframes cambioColor {
+    0% {
+        color: aliceblue; 
+      }
+      /* 25% {
+        color: #00ff00; 
+      } */
+      50% {
+        color: teal; 
+      }
+      /* 75% {
+        color: #ffff00; 
+      } */
+      100% {
+        color: aliceblue; 
+      }
 }
 
 @media screen and (min-width: 1200px) {
-    .divHeader{
+    .headerDiv{
         width: 100%;
         height: 130px;
-        background-color: aqua;
         margin: 0 auto;
         display: flex;
         justify-content: space-evenly;
@@ -43,12 +84,24 @@
 }
 
 @media screen and (min-width: 740px) and (max-width:1199px) {
-    .divHeader{
+    .headerDiv{
         width: 100%;
-        height: 100px;
-        
+        height: 130px;
+        margin: 0 auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
     }
     
+    .subDiv{
+        width: 50%;
+    }
+
+    .subDiv2{
+        width: 40%;
+       
+    }
+
     .imgHeader{
         width: 80px;
         height: 80px;
@@ -60,11 +113,19 @@
 }
 
 @media screen and (min-width: 501px) and (max-width:739px) {
-    .divHeader{
+    .headerDiv{
         width: 100%;
-        height: 100px;
+        height: 150px;
+        flex-direction: column;
     }
     
+    .subDiv{
+        width: 100%; 
+        justify-content: center;
+    }
+    .subDiv2{
+        width: 100%; 
+    }
     .imgHeader{
         width: 60px;
         height: 60px;
@@ -76,18 +137,31 @@
 }
 
 @media screen and (max-width:500px) {
-    .divHeader{
+    .headerDiv{
         width: 100%;
-        height: 120px;
+        height: 150px;
         flex-direction: column;
+    }
+
+    .subDiv{
+        width: 100%; 
+        justify-content: center;
+    }
+    .subDiv2{
+        width: 100%; 
     }
     
     .imgHeader{
-        width: 60px;
-        height: 60px;
+        width: 70px;
+        height: 70px;
+        transition: 1s;
+    }
+
+    .imgHeader:hover{
+        box-shadow: 0 0 20px white;
     }
     
     .nameHeader{
-        font-size: 30px;
+        font-size: 20px;
     }
 }

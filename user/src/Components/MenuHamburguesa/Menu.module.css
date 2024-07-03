@@ -1,0 +1,21 @@
+.imagenMenu{
+    width: 100%;
+    height: 100%;
+}
+
+.buttonMenu{
+    width: 30px;
+    height: 30px;
+}
+.containerMenu{
+    width: 200px;
+    height: 250px;
+    position: absolute;
+    z-index: 3;
+    top: 130px;
+}
+
+.containerButton{
+    width: 100px;
+    height: 30px;
+}

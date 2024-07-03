@@ -4,11 +4,16 @@ import styles from './Navbar.module.css'
 
 export const Navbar = () => {
   return (
+    <>
     <div className={styles.navbar}>
-        <Link href='/' ><button className={styles.buttonNavbar}>Home</button></Link>
-        <Link href='/about'><button className={styles.buttonNavbar}>About</button></Link>
-        <Link href='/interests'><button className={styles.buttonNavbar}>Interests</button></Link>
-        <Link href='/contact'><button className={styles.buttonNavbar}>Contact</button></Link>
+        <Link href='#home' className={styles.linkNav}><span className={styles.buttonNavbar}>Home</span></Link>
+        <Link href='#sec1' className={styles.linkNav}><span className={styles.buttonNavbar}>About</span></Link>
+        <Link href='#sec2' className={styles.linkNav}><span className={styles.buttonNavbar}>Interests </span></Link>
+       
+        <Link href='#sec3' className={styles.linkNav}><span className={styles.buttonNavbar}>Contact</span></Link>
     </div>
+    
+    </>
+    
   )
 }

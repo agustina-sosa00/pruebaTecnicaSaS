@@ -1,7 +1,9 @@
 .divHome{
   width: 100%;
-  min-height: 90vh;
+  min-height: 700px;
   display: flex;
   justify-content: center;
   align-items: center;
+  background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('https://i.ibb.co/Yh4sqQ5/oficina2.png');
+  background-size: cover;
 }

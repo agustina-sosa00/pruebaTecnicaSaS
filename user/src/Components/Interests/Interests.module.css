@@ -1,0 +1,174 @@
+.divInterests{
+    width: 100%;
+    min-height: 700px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.titleInterests{
+    color: teal;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 40px;
+    margin: 10px;
+}
+
+.containerCajas{
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.subCaja{
+    width: 100%;
+    display: flex;
+    margin-top: 130px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.cajaInteres{
+    width: 300px;
+    height: 200px;
+    margin: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 5px;
+    border-radius: 20px;
+    transition: 1s;
+    box-shadow: 0px 0px 10px gray;
+}
+.cajaInteres:hover{
+    box-shadow: 0px 0px 20px teal;
+    translate: scale(0.0,1);
+}
+
+.tituloInteres{
+    text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 20px;
+    font-weight: 400;
+    color: #64ccc5;
+}
+
+.pInteres{
+    text-align: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 17px;
+    color: #031e29;
+}
+
+@media screen and (min-width: 700px) and (max-width: 1199px){}
+@media screen and (min-width: 500px) and (max-width: 699px){.divInterests{
+    margin-top: 150px;
+    width: 100%;
+    min-height: 800px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.titleInterests{
+    font-size: 40px;
+    text-align: center;
+    margin-bottom: 20px;
+    color: teal;
+    text-shadow: 0px 10px 20px #407c78;
+}
+
+.containerCajas{
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.subCaja{
+    width: 100%;
+   
+}
+
+.cajaInteres{
+    width: 250px;
+    height: 150px;
+    
+}
+
+
+.tituloInteres{
+    text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 20px;
+    font-weight: 400;
+    color: #64ccc5;
+}
+
+.pInteres{
+    text-align: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 17px;
+}}
+@media screen and (max-width: 499px){
+    .divInterests{
+        margin-top: 150px;
+        width: 100%;
+        min-height: 800px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    
+    }
+    
+    .titleInterests{
+        font-size: 40px;
+        text-align: center;
+        margin-bottom: 20px;
+        color: teal;
+        text-shadow: 0px 10px 20px #407c78;
+    }
+    
+    .containerCajas{
+        width: 100%;
+        height: auto;
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+    
+    .subCaja{
+        width: 100%;
+       
+    }
+    
+    .cajaInteres{
+        width: 250px;
+        height: 150px;
+        
+    }
+   
+    
+    .tituloInteres{
+        text-align: center;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        font-size: 20px;
+        font-weight: 400;
+        color: #64ccc5;
+    }
+    
+    .pInteres{
+        text-align: center;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        font-size: 17px;
+    }
+}
