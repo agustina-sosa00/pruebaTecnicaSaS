@@ -1,12 +1,12 @@
-import { Header } from "../../components/Header/Header";
-import About from "../../components/about/About";
+import CardHome from "@/Components/CardHome/CardHome";
+import styles from './page.module.css'
 
 export default function Home() {
   return (
-    <>
-    <h1>hola este es el home</h1>
-    <About/>
-    </>
+    <div className={styles.divHome}>
+       <CardHome/>
+    </div>
+   
     
   );
 }
